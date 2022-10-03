@@ -1,0 +1,125 @@
+:root {
+  --soft-blue-color: hsl(215, 51%, 70%);
+  --cyan-color: hsl(178, 100%, 50%);
+  /* main BG */
+  --very-dark-blue-main-bg-color: hsl(217, 54%, 11%);
+  /* card BG */
+  --very-dark-blue-card-bg-color: hsl(216, 50%, 16%);
+  --font-size: 18px;
+  --font-family:'Outfit', sans-serif;
+  --font-weight-300: 300;
+  --font-weight-700: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+.ntf-component {
+  height: 100vh;
+  background-color: var(--very-dark-blue-main-bg-color);
+  display: flex;
+  justify-content: center;
+}
+
+.nft-component__card {
+  flex-basis: 90%;
+  max-width: 400px;
+  align-self: center;
+  background-color: var(--very-dark-blue-card-bg-color);
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+.nft-component__image {
+  max-width: 100%;
+  border-radius: 1em;
+}
+
+.nft-component__title {
+  color: white;
+  font-weight: var(--font-weight-700);
+}
+
+.nft-component__description {
+  margin-top: 1em;
+  color: var(--soft-blue-color);
+}
+
+.nft-component__paragraph {
+  margin-top: 1em;
+  font-weight: var(--font-weight-300);
+}
+
+.nft-component__detailes {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft-component__price {
+  color: var(--cyan-color);
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.nft-component__days-left {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-weight: var(--font-weight-300);
+}
+
+hr {
+  margin-top: 1em;
+  border: solid 0.1px;
+  color: var(--soft-blue-color);
+}
+
+.nft-component__author {
+  margin-top: 1em;
+}
+
+.nft-component__author-name {
+  color: white;
+}
+
+.nft-component__author {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nft-component__author-avatar {
+  width: 2.5em;
+  border: solid white;
+  border-radius: 2em;
+}
